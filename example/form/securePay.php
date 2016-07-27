@@ -19,13 +19,13 @@ require_once '../../config.php';
   <div class="form-group required">
    <label for="callback_url" class="col-sm-2 control-label">Return URL</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="callback_url" id="callback_url" value="<?php echo URI ?>/example/response/securepay_notify.php">
+    <input type="text" class="form-control" name="callback_url" id="callback_url" value="<?php echo URI ?>/example/response/securepay_notify.php">Notice: Return Url can not be localhost
    </div>
   </div>
   <div class="form-group required">
    <label for="ipn_url" class="col-sm-2 control-label">Callback URL</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo URI ?>/example/response/securepay_notify.php">
+    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo URI ?>/example/response/securepay_notify.php">Notice: Callback Url can not be localhost
    </div>
   </div>
   <div class="form-group required">
