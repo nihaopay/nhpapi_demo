@@ -24,7 +24,7 @@ $data = array(
 
 $transaction_id = $_REQUEST['transaction_id'];
 
-$expressPayURL =  $nihaopayApi::API_URL . "/transactions/".$transaction_id."/cancel";
+$expressPayURL =  API_URL . "/transactions/".$transaction_id."/cancel";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $expressPayURL);

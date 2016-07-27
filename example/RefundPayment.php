@@ -36,7 +36,7 @@ $data = array (
         'reason' => $_REQUEST ['reason'] 
 );
 
-$expressPayURL = $nihaopayApi::API_URL . "/transactions/" . $transaction_id . "/refund";
+$expressPayURL = API_URL . "/transactions/" . $transaction_id . "/refund";
 
 $ch = curl_init ();
 curl_setopt ( $ch, CURLOPT_URL, $expressPayURL );

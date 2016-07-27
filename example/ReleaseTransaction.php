@@ -31,7 +31,7 @@ $headers = array(
 
 $transaction_id = trim($_REQUEST['transaction_id']);
 
-$expressPayURL =  $nihaopayApi::API_URL . "/transactions/".$transaction_id."/release";
+$expressPayURL =  API_URL . "/transactions/".$transaction_id."/release";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $expressPayURL);

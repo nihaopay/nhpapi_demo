@@ -42,7 +42,7 @@ $data = array(
         'reference'      => $_REQUEST['reference']
 );
 
-$expressPayURL =  $nihaopayApi::API_URL . "/transactions/expresspay";
+$expressPayURL =  API_URL . "/transactions/expresspay";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $expressPayURL);

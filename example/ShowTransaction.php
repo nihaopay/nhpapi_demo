@@ -18,7 +18,7 @@ $headers = array(
 
 $transaction_id = $_REQUEST['transaction_id'];
 
-$inquiryURL = $nihaopayApi::API_URL . "/transactions/".$transaction_id;
+$inquiryURL = API_URL . "/transactions/".$transaction_id;
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $inquiryURL);

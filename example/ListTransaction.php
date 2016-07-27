@@ -23,7 +23,7 @@ $end = new DateTime($_REQUEST['ending_before']);
 $startTime = $start->format("Y-m-d\TH:i:s\Z");
 $endTime = $end->format("Y-m-d\TH:i:s\Z");
 
-$inquiryURL = $nihaopayApi::API_URL . "/transactions/?limit=".$limit;
+$inquiryURL = API_URL . "/transactions/?limit=".$limit;
 if ($_REQUEST['starting_after']){
     $inquiryURL .= '&starting_after='.$startTime;
 }

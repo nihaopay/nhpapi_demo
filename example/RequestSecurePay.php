@@ -28,7 +28,7 @@ $data = array(
     'terminal'      => $_REQUEST['terminal'],
     'timeout'       => $_REQUEST['timeout']
 );
-$securePayURL = $nihaopayApi::API_URL . "/transactions/securepay";
+$securePayURL = API_URL . "/transactions/securepay";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $securePayURL);
