@@ -19,19 +19,19 @@ require_once '../../config.php';
   <div class="form-group required">
    <label for="callback_url" class="col-sm-2 control-label">Return URL</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="callback_url" id="callback_url" value="<?= URI ?>/example/response/securepay_notify.php">
+    <input type="text" class="form-control" name="callback_url" id="callback_url" value="<?php echo URI ?>/example/response/securepay_notify.php">
    </div>
   </div>
   <div class="form-group required">
    <label for="ipn_url" class="col-sm-2 control-label">Callback URL</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?= URI ?>/example/response/securepay_notify.php">
+    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo URI ?>/example/response/securepay_notify.php">
    </div>
   </div>
   <div class="form-group required">
    <label for="token" class="col-sm-2 control-label">Token</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="token" id="token" value="<?= TOKEN ?>">
+    <input type="text" class="form-control" name="token" id="token" value="<?php echo TOKEN ?>">
    </div>
   </div>
   <br />

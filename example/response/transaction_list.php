@@ -35,17 +35,17 @@ if(!$transactions){
 		
 		<?php foreach ($transactions as $order): ?>
 			<tr>
-				<td><?= $order['id'] ?></td>
-				<td><?= $order['currency'] ?></td>
-				<td><?= $order['amount'] ?></td>
-				<td><?= $order['type'] ?></td>
-				<td><?= $order['note'] ?></td>
-				<td><?= $order['reference'] ?></td>
+				<td><?php echo $order['id'] ?></td>
+				<td><?php echo $order['currency'] ?></td>
+				<td><?php echo $order['amount'] ?></td>
+				<td><?php echo $order['type'] ?></td>
+				<td><?php echo $order['note'] ?></td>
+				<td><?php echo $order['reference'] ?></td>
 				<?php
 				$date = new DateTime($order['time']);
 				?>
-				<td><?= $date->format('Y-m-d H:i:s') ?></td>
-				<td><?= $order['status'] ?></td>
+				<td><?php echo $date->format('Y-m-d H:i:s') ?></td>
+				<td><?php echo $order['status'] ?></td>
 			</tr>
 		<?php endforeach; ?>
 		</tbody>

@@ -23,7 +23,7 @@ require_once '../../config.php';
         <div class="form-group required">
            <label for="token" class="col-sm-2 control-label">Token</label>
            <div class="col-sm-10">
-            <input type="text" class="form-control" name="token" id="token" value="<?= TOKEN ?>">
+            <input type="text" class="form-control" name="token" id="token" value="<?php echo TOKEN ?>">
            </div>
         </div>
   <br/>
