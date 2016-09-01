@@ -17,13 +17,13 @@ require_once '../../config.php';
  <form action="../RequestSecurePay.php" class="form-horizontal" method="POST">
   <h4>Merchant Settings (normally hidden)</h4>
   <div class="form-group required">
-   <label for="callback_url" class="col-sm-2 control-label">Return URL</label>
+   <label for="callback_url" class="col-sm-2 control-label">Callback URL</label>
    <div class="col-sm-10">
     <input type="text" class="form-control" name="callback_url" id="callback_url" value="<?php echo CALLBACK_URL; ?>">
    </div>
   </div>
   <div class="form-group required">
-   <label for="ipn_url" class="col-sm-2 control-label">Callback URL</label>
+   <label for="ipn_url" class="col-sm-2 control-label">IPN URL</label>
    <div class="col-sm-10">
     <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo RETURN_URL; ?>">
    </div>
