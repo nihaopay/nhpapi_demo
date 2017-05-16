@@ -22,4 +22,21 @@ function printf_info($data)
 
 Log::INFO(json_encode($_REQUEST));
 
+function sign($params,$token) {
+     ksort($params);
+        $sign_str = "";
+        foreach ($params as $key => $val) {
+            if($key == 'verify_sign') {
+                continue;
+            }
+            if($val == null && $val == '' && $val == 'null') {
+                continue;
+            }
+            $sign_str .= sprintf("%s=%s&", $key, $val);
+        }
+    return md5($sign_str . strtolower(md5($token)));
+}
+if($_POST['verify_sign'] != sign($_POST, $payr['paykey'])) {
+    exit('签名失败');
+}
 printf_info($_REQUEST);
