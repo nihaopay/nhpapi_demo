@@ -12,7 +12,7 @@ require 'lib/check.php';
 <body>
     <div class="container" align="center">
         <h1>Nihaopay API example</h1>
-        <p>This example is php code for nihaopay api version v1.1, It includes the major api, please view the docs in <a target="_blank" href="http://docs.nihaopay.com/api/v1.1">http://docs.nihaopay.com/api/v1.1</a> first</p>
+        <p>This example is php code for nihaopay api version v1.2, It includes the major api, please view the docs in <a target="_blank" href="http://docs.nihaopay.com/api/">http://docs.nihaopay.com/api/</a> first</p>
         <p>
     <br>
     <div class="list-group">

@@ -2,7 +2,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <title>express pay</title>
+    <title>IPN</title>
 </head>
 <?php
 require_once '../../config.php';
@@ -15,7 +15,7 @@ Log::INFO("begin notify");
 function printf_info($data)
 {
     foreach($data as $key=>$value){
-        echo "<font color='#00ff55;'>$key</font> : $value <br/>";
+        echo "<font color='#1A237E'>$key</font> : $value <br/>";
     }
 }
 
@@ -29,14 +29,19 @@ function sign($params,$token) {
             if($key == 'verify_sign') {
                 continue;
             }
-            if($val == null && $val == '' && $val == 'null') {
+            if($val == null || $val == '' || $val == 'null') {
                 continue;
             }
             $sign_str .= sprintf("%s=%s&", $key, $val);
         }
     return md5($sign_str . strtolower(md5($token)));
 }
-if($_POST['verify_sign'] != sign($_POST, $payr['paykey'])) {
-    exit('签名失败');
+
+if($_REQUEST['verify_sign'] != sign($_REQUEST, TOKEN)) {
+    var_dump(http_response_code(400));
 }
-printf_info($_REQUEST);
+
+if($_REQUEST['status'] == 'success') {
+    // update your transaction status, then echo ok
+    echo "ok";
+}

@@ -8,11 +8,11 @@ require_once '../../config.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../../static/css/bootstrap.min.css" rel="stylesheet">
-	<title>Secure Payment Request Form</title>
+	<title>SecurePay Request Form</title>
 </head>
 <body>
 <div class="container">
- <h3>Secure Payment Request Form</h3>
+ <h3>SecurePay Request Form</h3>
  <a href="../../index.php">Back to Home</a>
  <form action="../RequestSecurePay.php" class="form-horizontal" method="POST">
   <h4>Merchant Settings (normally hidden)</h4>
@@ -25,7 +25,7 @@ require_once '../../config.php';
   <div class="form-group required">
    <label for="ipn_url" class="col-sm-2 control-label">IPN URL</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo RETURN_URL; ?>">
+    <input type="text" class="form-control" name="ipn_url" id="ipn_url" value="<?php echo IPN_URL; ?>">
    </div>
   </div>
   <div class="form-group required">
@@ -50,7 +50,7 @@ require_once '../../config.php';
   <div class="form-group required">
    <label for="reference" class="col-sm-2 control-label">Reference</label>
    <div class="col-sm-10">
-    <input type="text" class="form-control" id="reference" name="reference" value='<?php echo date("YmdHis").rand(0, 100);?>' >
+    <input type="text" class="form-control" id="reference" name="reference" value='<?php echo date("YmdHis").'-'.rand(0, 100);?>' >
    </div>
   </div>
   <div class="form-group required">

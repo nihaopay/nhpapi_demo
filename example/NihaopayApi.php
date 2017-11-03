@@ -4,8 +4,7 @@
 */
 class NihaopayApi {
     public static $bearerToken;
-    //const API_URL = "http://api.test.nihaopay.com/v1.1";//for sandbox environment
-    const API_URL = "http://localhost:8080/HazePGW/v1.1";//for sandbox environment
+    const API_URL = "https://apitest.nihaopay.com/v1.2";//test environment
     
     //const API_URL = "https://api.nihaopay.com/v1.1";//production environment
 
