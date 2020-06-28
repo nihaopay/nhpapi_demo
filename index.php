@@ -18,15 +18,16 @@ require 'lib/check.php';
     <div class="list-group">
         <ul class="nav">
         
-          <li><a class="list-group-item" href="example/form/securePay.php">SecurePay Request</a></li>
-          <li><a class="list-group-item" href="example/form/expressPay.php">ExpressPay Request</a></li>
-          <li><a class="list-group-item" href="example/form/capture.php">Capture Transation</a></li>
-          <li><a class="list-group-item" href="example/form/list_transaction.php">List Transaction</a></li>
-          <li><a class="list-group-item" href="example/form/show_transaction.php">Show Transaction</a></li>
-          <li><a class="list-group-item" href="example/form/cancel.php">Cancel Transaction</a></li>
-          <li><a class="list-group-item" href="example/form/refund.php">Refund Transaction</a></li>
-          <li><a class="list-group-item" href="example/form/release.php">Release Transation</a></li>
+          <li><a class="list-group-item" href="example/form/securePay.php">SecurePay</a></li>
+          <li><a class="list-group-item" href="example/form/show_transaction.php">Single Inquiry</a></li>
+          <li><a class="list-group-item" href="example/form/refund.php">Refund</a></li>
 
+          <li><a class="list-group-item" href="example/form/expressPay.php">Charge/Authorize UnionPay Credit Card</a></li>
+          <li><a class="list-group-item" href="example/form/capture.php">Capture Previously Authorized</a></li>
+          <li><a class="list-group-item" href="example/form/release.php">Release Previously Authorized</a></li>
+          
+          <li><a class="list-group-item" href="example/form/list_transaction.php">List Transaction</a></li>
+         
         </ul>
         </div>
     </div>
